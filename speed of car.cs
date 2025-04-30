@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 namespace oop
 {
     class speedcar
@@ -22,7 +22,9 @@ namespace oop
         }
             public void display() { 
         {
+                Console.WriteLine("brand is "+brand+"model is "+model+" year is "+year)
                 Console.WriteLine("the current speed is " + speed);
+
         } 
           
         }
