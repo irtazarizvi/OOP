@@ -1,0 +1,43 @@
+﻿using System;
+namespace inheritance
+{
+    class employee
+    {
+         public string name;
+        public void work()
+        {
+            Console.WriteLine(name + "is working");
+        }
+    }
+    class manager : employee
+    {
+        public void meeting()
+        {
+            Console.WriteLine(name + "is in the meeting");
+        }
+    }
+    class developer : employee
+    {
+        public void coding()
+        {
+           Console.WriteLine(name+"is typing a code");
+        }
+    }
+    class program
+    {
+        static void Main(string[] args)
+        {
+            manager m=new manager();
+            m.name = "irtaza";
+            m.work();
+            m.meeting();
+            developer d = new developer();
+            d.name = "aun";
+            d.work();
+            d.coding();
+            Console.ReadKey();
+
+
+        }
+    }
+}
