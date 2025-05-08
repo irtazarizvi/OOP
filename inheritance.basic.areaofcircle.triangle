@@ -1,0 +1,50 @@
+﻿using System;
+
+class area
+{
+    class circle : area
+    {
+        public double radius;
+
+        public circle(double r)
+        {
+            radius = r;
+        }
+
+        public void areaofcircle()
+        {
+            double a = 3.14 * radius * radius;
+            Console.WriteLine("area of circle is" + a);
+        }
+    }
+
+    class triangle : area
+    {
+        public double baselength;
+        public double height;
+
+        public triangle(double b, double h)
+        {
+            baselength = b;
+            height = h;
+        }
+
+        public void areaoftriangle()
+        {
+            double a = 0.5 * baselength * height;
+            Console.WriteLine("area of triangle is" + a);
+        }
+    }
+
+    class program
+    {
+        static void Main(string[] args)
+        {
+            circle c = new circle(7);
+            c.areaofcircle();
+
+            triangle t = new triangle(10, 5);
+            t.areaoftriangle();
+        }
+    }
+}
